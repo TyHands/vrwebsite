@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vintage Revelations</title>
+    <link rel="icon" type="image/x-icon" href="/res/favicon.png">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!--- Navbar -->
+    <div id="vrnav" class="sticky no-margin">
+    </div>
+  
+      <ul class="sidenav" id="dropdown">
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!--- End of navbar -->
+
+
+    <!--- Main content --->
+    <div>
+     <div class="container row">
+        <div class="service-section">
+            <div class="col s12 m6">
+                <h5><b>We Would Love To Hear From You!</b></h5>
+                <span class="vr-grey-dark">
+                    If you have any questions or require more information, please do not hesitate to get in touch and we will reply as soon as possible.
+                </span>
+                        <br>
+                        <form action="https://formsubmit.co/2a48dc64faed5ab92b5f2409d89f593e" method="POST" />
+
+
+                                <input name="name" placeholder="Name" id="name" type="text" class="validate" required>
+                                <label for="name">Name *</label>
+
+
+                                <input name="email" placeholder="Email" id="email" type="email" class="validate" required>
+                                <label for="email">Email *</label>
+                                
+                                
+                                <input name="phone" placeholder="Phone number" id="phone_number" type="text" class="validate" required>
+                                <label for="phone_number">Phone Number *</label>
+
+                                <textarea name="message" placeholder="Message" id="message" type="text" class="materialize-textarea" required></textarea>
+                                <label for="message">Message *</label><br>
+
+                                <button type="submit" class=" waves-effect waves-light btn-large services-btn white black-text btn-border ">Submit</button>
+                                <input type="hidden" name="_subject" value="Contact form submission!">
+                                <input type="hidden" name="_next" value="localhost:8080/thanks.html"> 
+                          </form>     
+                        </div>
+                <br>
+            <div class="col s12 m6">
+                <img src="res/stock1.jpg" class="services-img">
+            </div>
+                <div class="s12 m6"><h6><b>Telephone: </b></h6><a href="tel:01452947520" class="custom-gold-text"><u>01452 947520</u></a></div>
+                <div class="s12 m6"><h6><b>Email: </b></h6><a href="mailto:enquiries@vintagerevelations.co.uk" class="custom-gold-text"><u>enquiries@vintagerevelations.co.uk</u></a></div>
+                <div class="s12 m6"><h6><b>Head Office: </b></h6><span>Kestrel Court, Waterwells Drive, Quedgeley, Gloucester, GL2 2AT</span></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </div>
+
+
+<footer class="page-footer white vr-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l4 center-align">
+        <img src="res/VRLOGO.png" class="logo_img">
+        <div class="footer-address"><span class="vr-grey-dark">
+          Kestrel Court, Waterwells Drive
+          <br>
+          Quedgeley, Gloucestershire GL2 2AT
+          <br><br>
+          <b>Company Number: 15458093</b>
+        </span></div>
+      </div>
+
+      <div class="col s12 m12 l2 black-text">
+        <ul>
+          <li><h8><b>Quick Links</b></h8></li>
+          <hr>
+          <li><a href="index.html" class="black-text">Home</a></li>
+          <li><a href="services.html" class="black-text">Services</a></li>
+          <li><a href="bloglist.html" class="black-text">Blog</a></li>
+          <li><a href="signposting.html" class="black-text">Singposting</a></li>
+          <li>
+            <a href="https://www.facebook.com/p/vintage-revelations-limited-61561678720900/"><img src="res/FB.jpg" class="footer-icon"></a>
+            <a href="https://www.instagram.com/vintage_revelations/"><img src="res/IG.jpg" class="footer-icon"></a>
+            <a href="https://www.youtube.com/@VintageRevelations"><img src="res/YT.jpg" class="footer-icon"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col s12 m12 l2 black-text">
+        <ul>
+          <li><h8><b>Information</b></h8></li>
+          <hr>
+          <li><a href="about.html" class="black-text">About us</a></li>
+          <li><a href="careers.html" class="black-text">Careers</a></li>
+          <li><a href="contact.html" class="black-text">Contact us</a></li>
+          <li><a href="privacy.html" class="black-text">Privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="col s12 m12 l4 black-text">
+        <ul>
+          <li><h8><b>Email Subscription</b></h8></li>
+          <hr>
+          <li>Keep up to date with newletters and updates - for free.</li>
+          <li>
+            <div class="col s12 m6"><input type="email" name="subemail" placeholder="Email" id="subemail"></input></div>
+            <div class="col s12 m6" id="emailsubdiv">  
+              <a class=" waves-effect waves-light btn-large vr-btn vr-gold black-text" onclick="sendSubEmail()">Subscribe</a>
+            </div>
+          </li>
+        </ul>
+  </div>
+</footer>
+    <script src="js/materialize.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
