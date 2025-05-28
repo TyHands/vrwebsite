@@ -2,7 +2,7 @@ let pageTitle = document.getElementById("page-title")
 const urlParams = new URLSearchParams(window.location.search);
 const blogID = urlParams.get('id');
 
-fetch('http://localhost:8080/blog-post/' + blogID)
+fetch('http://87.106.44.229:8080/blog-post/' + blogID)
 .then(response => response.json())
 .then(data => {generate_blog(data)})
 

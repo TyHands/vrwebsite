@@ -3,7 +3,7 @@ fetchBlogs();
 
 
 function fetchBlogs(){
-    fetch('http://localhost:8080/allblogs')
+    fetch('http://87.106.44.229:8080/allblogs')
     .then(response => response.json())
     .then(data => {createBlogCards(data)})
 }
