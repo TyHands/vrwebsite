@@ -36,7 +36,7 @@ function sendSubEmail(){
   let emailInput = document.getElementById("subemail")
   let email = emailInput.value;
 
-   fetch('http://localhost:8080/storeemail', {
+   fetch('https://vintagerevelations.co.uk:8080/storeemail', {
         method: "POST",
 		headers: {
 			"Content-Type": "application/json",

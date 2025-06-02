@@ -3,7 +3,7 @@ fetchBlogs();
 
 
 function fetchBlogs(){
-    fetch('http://87.106.44.229:8080/allblogs')
+    fetch('https://vintagerevelations.co.uk:8080/allblogs')
     .then(response => response.json())
     .then(data => {createBlogCards(data)})
 }
