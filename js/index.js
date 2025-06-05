@@ -29,14 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
   '</div>' +
   '<div class="col s1"></div>' +
 '</div>' +
-'<div class="banner-attachment center-align">We’re expanding. <a href="index.html" class="black-text"><u>Check it out</u></a></div>'
+'<div class="banner-attachment center-align">A lifetime of care, now cared for - <a href="https://youtu.be/Ux6F_D4DQoU?si=zyHVJwmxRSQvazNY" class="black-text"><u>see Jean’s story here</u></a></div>'
 
 
 function sendSubEmail(){
   let emailInput = document.getElementById("subemail")
   let email = emailInput.value;
 
-   fetch('https://vintagerevelations.co.uk:8443/storeemail', {
+   fetch('https://localhost:8443/storeemail', {
         method: "POST",
 		headers: {
 			"Content-Type": "application/json",
