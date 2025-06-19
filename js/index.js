@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
 '<div class="banner-attachment center-align">A lifetime of care, now cared for - <a href="https://youtu.be/Ux6F_D4DQoU?si=zyHVJwmxRSQvazNY" class="black-text" target="_blank"><u>see Jean’s story here</u></a></div>'
 
 
-function sendSubEmail(){
-  let emailInput = document.getElementById("subemail")
+function sendSubEmail(id){
+  let emailInput = document.getElementById(id)
   let email = emailInput.value;
 
    fetch('https://localhost:8443/storeemail', {
