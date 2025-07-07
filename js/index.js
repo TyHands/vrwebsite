@@ -55,6 +55,6 @@ function handlePostResponse(email){
   console.log(email + " Subscribed")
 
   // do some kind of front end feedback
-  div = document.getElementById("emailsubdiv")
+  div = document.getElementsByClassName("emailsubdiv")
   div.innerHTML = '<i class="material-icons small">check</i>'
 }
