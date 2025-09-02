@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
   '</div>' +
   '<div class="col s1"></div>' +
 '</div>' +
-'<div class="banner-attachment center-align">Join the Everyday Heroes – <a href="https://vintagerevelations.co.uk/careers" class="black-text" target="_blank"><u>Apply now to become a Carer Today.</u></a></div>'
+'<div class="banner-attachment center-align">Join the Everyday Heroes – <a href="https://vintagerevelations.co.uk/careers" class="black-text" target="_blank"><u>Apply now to become a carer today.</u></a></div>'
 
 
 function sendSubEmail(id){
