@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
   '</div>' +
   '<div class="col s1"></div>' +
 '</div>' +
-'<div class="banner-attachment center-align">Know a carer who always shows up, gives their all, and makes a real difference? <a href="https://forms.gle/jmxQ34WSEswTM2oX9" class="black-text" target="_blank"><u>Nominate them here</u></a></div>'
+'<div class="banner-attachment center-align">Join the Everyday Heroes – Become a Carer Today. <a href="https://vintagerevelations.co.uk/careers" class="black-text" target="_blank"><u>Apply now</u></a></div>'
 
 
 function sendSubEmail(id){
