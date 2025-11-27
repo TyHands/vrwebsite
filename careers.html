@@ -50,6 +50,8 @@
                             <select name="position">
                                     <option value="careworker">Care Worker</option>
                                     <option value="seniorcareworker">Senior Care Worker</option>
+                                    <!---<option value="carecoordinator">Care Coordinator - Stroud Office</option>
+                                    <option value="officeassistant">Office Assistant - Gloucester Office</option>--->
                             </select>
 
                             <select multiple name="location" placeholder="location">
@@ -92,6 +94,21 @@
                                     <option value="righttowork">I have the right to work in the UK</option>
                                     <option value="norighttowork">I do not have the right to work in the UK</option>
                             </select>
+
+                            <select name="source">
+                                    <option value="facebook">Facebook</option>
+                                    <option value="google">Google</option>
+                                    <option value="tiktok">TikTok</option>
+                                    <option value="instagram">Instagram</option>
+                                    <option value="flyer">Flyer</option>
+                                    <option value="friend">From a friend</option>
+                                    <option value="event">Event stand</option>
+                                    <option value="nhsrefer">NHS Referral</option>
+                                    <option value="lottie">Lottie</option>
+                                    <option value="ageuk">Age UK</option>
+                                    <option value="other">Other</option>
+                            </select>
+
                                 <textarea name="additionalinfo" placeholder="Any more relevant information? (e.g qualifications)" id="message" type="text" class="materialize-textarea"></textarea>
                                 <input type="hidden" name="_subject" value="Career form submission!">
                                 <button type="submit" class=" waves-effect waves-light btn-large services-btn white black-text btn-border ">Submit</button>
