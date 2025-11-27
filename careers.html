@@ -34,7 +34,7 @@
     <div>
      <div class="container row">
         <div class="service-section">
-            <div class="col s12 m6">
+            <div class="col s12">
                 <h5><b>We're Looking For You!</b></h5>
                 <span class="vr-grey-dark">
                     We are always looking for Quality Health and Social Care Practitioners. Get in touch to discuss career options with a provider
@@ -53,7 +53,9 @@
                                     <!---<option value="carecoordinator">Care Coordinator - Stroud Office</option>
                                     <option value="officeassistant">Office Assistant - Gloucester Office</option>--->
                             </select>
+                            <br>
 
+                            <label for="location">Which location(s) can you cover?</label>
                             <select multiple name="location" placeholder="location">
                                     <option value="" disabled selected>Choose location(s)</option>
                                     <option value="gloucester">Gloucester</option>
@@ -61,40 +63,58 @@
                                     <option value="tewkesbury">Tewkesbury</option>
                                     <option value="cheltenham">Cheltenham</option>
                             </select>
-                            
-                            <input name="name" placeholder="Name" id="name" type="text" class="validate" required>
-                            <input name="email" placeholder="Email" id="email" type="email" class="validate" required>
-                            <input name="phone" placeholder="Phone number" id="phone_number" type="text" class="validate" required>
+                            <br>
 
+                            <label for="name">Name</label>
+                            <input name="name" placeholder="Name" id="name" type="text" class="validate" required>
+                            <br>
+
+                            <label for="email">Email</label>
+                            <input name="email" placeholder="Email" id="email" type="email" class="validate" required>
+                            <br>
+                            <label for="phone">Phone</label>
+                            <input name="phone" placeholder="Phone number" id="phone_number" type="text" class="validate" required>
+                            <br>
+
+                            <label for="experience(years)">How much experience do you have?</label>
                             <select name="experience(years)">
                                     <option value="0">No experience</option>
                                     <option value="1-2">1-2 years</option>
                                     <option value="3-5">3-5 years</option>
                                     <option value="5+">5+ years</option>
                             </select>
+                            <br>
 
-                                <label for="experience(years)"></label>                              
+                                <label for="worktype">Hours you are available.</label>                        
                             <select name="worktype">
                                 <option value="full">Full time</option>
                                 <option value="part">Part time</option>
                                 <option value="bank">Bank (as needed)</option>
                             </select>
+                            <br>
 
+                            <label for="driver">License status.</label>
                             <select name="driver">
                                 <option value="driver">Full UK License</option>
                                 <option value="nonedriver">I do not drive</option>
                             </select>
-                        
+                            <br>
+
+                            <label for="sponsor">Do you require sponsorship?</label>
                             <select name="sponsor">
                                     <option value="nosponsorneeded">I do not require sponsorship</option>
                                     <option value="needsponsor">I do require sponsorship</option>
                             </select>
+                            <br>
 
+                            <label for="right to work">Can you legally work in the UK?</label>
                             <select name="right to work">
                                     <option value="righttowork">I have the right to work in the UK</option>
                                     <option value="norighttowork">I do not have the right to work in the UK</option>
                             </select>
+                            <br>
 
+                            <label for="source">Where did you hear about us?</label>
                             <select name="source">
                                     <option value="facebook">Facebook</option>
                                     <option value="google">Google</option>
@@ -108,10 +128,11 @@
                                     <option value="ageuk">Age UK</option>
                                     <option value="other">Other</option>
                             </select>
-
+                            <br>
+                                <label for="additionalinfo">Please provide any additional useful information for you application.</label>
                                 <textarea name="additionalinfo" placeholder="Any more relevant information? (e.g qualifications)" id="message" type="text" class="materialize-textarea"></textarea>
                                 <input type="hidden" name="_subject" value="Career form submission!">
-                                <button type="submit" class=" waves-effect waves-light btn-large services-btn white black-text btn-border ">Submit</button>
+                                <button type="submit" class=" waves-effect waves-light btn-large services-btn white black-text btn-border btn-centre">Submit</button>
                                 <input type="hidden" name="_next" value="https://www.vintagerevelations.co.uk/thanks.html"> 
                             </form>   
                         </div>
@@ -124,7 +145,7 @@
             </div>
             <div class="col s12 m6">
                 <div class="s12 m6"><h6><b>Telephone: </b></h6><a href="tel:01452947520" class="custom-gold-text"><u>01452 947520</u></a></div>
-                <div class="s12 m6"><h6><b>Email: </b></h6><a href="mailto:enquiries@vintagerevelations.co.uk" class="custom-gold-text"><u>enquiries@vintagerevelations.co.uk</u></a></div>
+                <div class="s6 m6"><h6><b>Email: </b></h6><a href="mailto:enquiries@vintagerevelations.co.uk" class="custom-gold-text"><u>enquiries@<br>vintagerevelations.co.uk</u></a></div>
                 <div class="s12 m6"><h6><b>Head Office: </b></h6><span>Kestrel Court, Waterwells Drive, Quedgeley, Gloucester, GL2 2AT</span></div>
             </div>
         </div>

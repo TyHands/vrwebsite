@@ -7,6 +7,10 @@
     font-size: 1.5rem;
 }
 
+.btn-centre{
+  margin-left: 28%;
+}
+
 .custom-nav{
     min-height: fit-content;
 }
