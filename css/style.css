@@ -7,27 +7,22 @@
     font-size: 1.5rem;
 }
 
+
 .btn-centre{
   margin-left: 28%;
+}
+
+.nav-sizing{
+  min-height: 5rem;
 }
 
 .custom-nav{
     min-height: fit-content;
 }
 
-.custom-nav-hover{
-    border-radius: 20px;
-    -webkit-transition: .25s;
-}
-
-.custom-nav-hover:hover{
-    border-radius: 25px;
-    background: rgba(0, 0, 0, 0.19);
-}
-
 .nav-button{
-    min-height: 20rem;
-    border-radius: 20px;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .sticky {
@@ -37,8 +32,8 @@
 }
 
 .logo_img{
-    height: auto;
-    width: 10rem;
+    height: 4rem;
+    width: auto;
 }
 
 .no-margin-bottom{
@@ -64,6 +59,13 @@
   border-radius: 30px;
   max-width: 100%;
   height: 20rem;
+}
+
+#main-landing{
+  background-image: url("../res/Main_Landing_Banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .services-img{
@@ -113,7 +115,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .cta-header{
   margin-right: 2rem;
   font-weight: 600;
@@ -129,9 +130,52 @@
   box-shadow: none;
 }
 .banner-attachment{
-  background-color: #c49427;
-  margin-top: 0;
+  border-radius: 0px 0px 30px 0px;
+  padding-left: 0.5rem;
+  padding-right: 1.5rem;
+  height: inherit;
 }
+
+.banner-container{
+  display:flex;
+  align-items:center;
+  height: 2rem;
+  font-size:1.3rem;
+  margin-bottom: -2rem;
+}
+
+/* Gold section */
+.banner-left{
+  background:#c49427;
+  padding:0 30px 0 15px;
+  display:flex;
+  align-items:center;
+  border-radius:0 0 25px 0;
+  z-index: 2;
+  height: 2rem;
+}
+
+/* Cream section */
+.banner-right{
+  background:#f1ecdd;
+  padding:0 25px;
+  display:flex;
+  align-items:center;
+
+  margin-left:-1rem; /* pulls it left to overlap */
+
+  border-radius:0 0 25px 0;
+
+  height: 2rem;
+}
+
+/* phone layout */
+.banner-phone{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
 
 .no-margin{
   margin: 0;
@@ -335,6 +379,10 @@
   margin-top: -8.5rem;
 }
 
+.offset-banner{
+  background-position: left 1rem top;
+}
+
 .text-div{
   border: 1px solid black;
   border-radius: 15px;
@@ -458,4 +506,11 @@
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+
+  .lato-nav{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
   }
