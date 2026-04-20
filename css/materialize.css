@@ -2871,7 +2871,7 @@ ul.staggered-list li {
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1139px) {
   .hide-on-med-and-down {
     display: none !important;
   }
@@ -2907,7 +2907,7 @@ ul.staggered-list li {
   }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1139px) {
   .show-on-large {
     display: block !important;
   }
@@ -4309,7 +4309,7 @@ nav .nav-wrapper {
   height: 100%;
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1139px) {
   nav a.sidenav-trigger {
     display: none;
   }
