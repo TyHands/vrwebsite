@@ -19,13 +19,9 @@ function generate_blog(blog){
 
 
    //Main top section
-   let topDiv = document.getElementById("blog-top")
+   let contentDiv = document.getElementById("blog-content")
 
-   //Main middle section
-   let midDiv = document.getElementById("blog-mid")
-
-   //Main bottom section
-   let botDiv = document.getElementById("blog-bot")
+   contentDiv.innerHTML = "";
 
 
    //Meta data info, author etc
@@ -49,21 +45,16 @@ function generate_blog(blog){
    metaInfDiv.appendChild(authorElement)
 
 
-   //Creating sections using modular section function
-   let topDuoDiv = create_blog_section(pictures[0], subtitles[0], paragraphs[0])
-   let midDuoDiv = create_blog_section(pictures[1], subtitles[1], paragraphs[1])
-   let botDuoDiv = create_blog_section(pictures[2], subtitles[2], paragraphs[2])
+   contentDiv.appendChild(metaInfDiv)
 
+   for (let i = 0; i < paragraphs.length; i++) {
+      let sectionDiv = create_blog_section(pictures[i], subtitles[i], paragraphs[i])
+      contentDiv.appendChild(sectionDiv)
 
-   //attaching top div
-   topDiv.appendChild(metaInfDiv)
-   topDiv.appendChild(topDuoDiv)
-
-   //attaching mid div
-   midDiv.appendChild(midDuoDiv)
-
-   //attaching bot div
-   botDiv.appendChild(botDuoDiv)
+      if (i < paragraphs.length - 1) {
+         contentDiv.appendChild(create_cta_banner())
+      }
+   }
 
 
 
@@ -73,20 +64,52 @@ function create_blog_section(picture, subtitle, paragraph){
    let topDiv = document.createElement("div")
    topDiv.classList.add("container", "row")
 
-   let img = document.createElement("img")
-   img.src = picture
-   img.classList.add("blog-img")
+   if (picture) {
+      let img = document.createElement("img")
+      img.src = picture
+      img.classList.add("blog-img")
+      topDiv.appendChild(img)
+   }
 
-   let st = document.createElement("h5")
-   st.innerHTML = subtitle;
-   st.classList.add("bold")
+   if (subtitle) {
+      let st = document.createElement("h5")
+      st.innerHTML = subtitle;
+      st.classList.add("bold")
+      topDiv.appendChild(st)
+   }
 
-   let para = document.createElement("p")
-   para.innerHTML = paragraph;
-
-   topDiv.appendChild(img)
-   topDiv.appendChild(st)
-   topDiv.appendChild(para)
+   if (paragraph) {
+      let para = document.createElement("p")
+      para.innerHTML = paragraph;
+      topDiv.appendChild(para)
+   }
 
    return topDiv;
+}
+
+function create_cta_banner(){
+   let ctaDiv = document.createElement("div")
+   ctaDiv.classList.add("cta-banner", "section", "valign-wrapper")
+
+   let innerDiv = document.createElement("div")
+   innerDiv.classList.add("valign-wrapper")
+
+   let ctaHeader = document.createElement("h6")
+   ctaHeader.classList.add("hide-on-small-only", "cta-header")
+   ctaHeader.innerHTML = "Need domicillary care? Give us a call."
+
+   let phoneLink = document.createElement("a")
+   phoneLink.href = "tel:01452 947520"
+   phoneLink.classList.add("phone-number-btn", "pulse")
+
+   let phoneIcon = document.createElement("i")
+   phoneIcon.classList.add("material-icons", "small")
+   phoneIcon.innerHTML = "local_phone"
+
+   phoneLink.appendChild(phoneIcon)
+   innerDiv.appendChild(ctaHeader)
+   innerDiv.appendChild(phoneLink)
+   ctaDiv.appendChild(innerDiv)
+
+   return ctaDiv
 }
