@@ -6,47 +6,48 @@ function fetchBlogs(){
     fetch('https://vintagerevelations.co.uk:8443/allblogs')
     .then(response => response.json())
     .then(data => {createBlogCards(data)})
+    .catch(error => console.error("Failed to load blog list", error))
 }
 
 function createBlogCards(data){
-    let mainDiv = document.getElementById("blog-holder")
+    const mainDiv = document.getElementById("blog-holder")
+    if (!mainDiv) {
+        return;
+    }
 
-    for (var i = 0; i < data.length; i++){
-        let card = createBlogCard(data[i].pictures, data[i].title, data[i].id)
+    for (let i = 0; i < data.length; i++){
+        const card = createBlogCard(data[i].pictures, data[i].title, data[i].id)
         mainDiv.appendChild(card)
     }
 }
 
 function createBlogCard(imgs, title, id){
-    console.log(id)
-    let mainCardDiv = document.createElement("div")
-    mainCardDiv.classList.add("col")
-    mainCardDiv.classList.add("s12")
-    mainCardDiv.classList.add("m6")
+    const mainCardDiv = document.createElement("div")
+    mainCardDiv.classList.add("col", "s12", "m6")
     mainCardDiv.addEventListener("click", function(e){
         blogClicked(id)
     })
     
 
-    let card = document.createElement("div")
-    card.classList.add("card")
-    card.classList.add("vr-card")
+    const card = document.createElement("div")
+    card.classList.add("card", "vr-card")
     mainCardDiv.appendChild(card)
 
-    let cardImageHolder = document.createElement("div")
-    cardImageHolder.classList.add("card-image")
-    cardImageHolder.classList.add("vr-card-img-holder")
+    const cardImageHolder = document.createElement("div")
+    cardImageHolder.classList.add("card-image", "vr-card-img-holder")
     card.appendChild(cardImageHolder)
 
-    let cardImage = document.createElement("img")
+    const cardImage = document.createElement("img")
     cardImage.src = imgs[0]
-    cardImage.classList.add("responsive-img")
-    cardImage.classList.add("vr-card-img")
+    cardImage.classList.add("responsive-img", "vr-card-img")
+    cardImage.loading = "lazy"
+    cardImage.alt = title || "Blog image"
 
-    let cardTitle = document.createElement("h6")
-    cardTitle.classList.add("center-align")
-    cardTitle.classList.add("vr-card-title")
-    cardTitle.innerHTML = "<b>" + title + "</b>"
+    const cardTitle = document.createElement("h6")
+    cardTitle.classList.add("center-align", "vr-card-title")
+    const titleBold = document.createElement("b")
+    titleBold.textContent = title
+    cardTitle.appendChild(titleBold)
     cardImageHolder.appendChild(cardImage)
     cardImageHolder.appendChild(cardTitle)
 
@@ -54,5 +55,5 @@ function createBlogCard(imgs, title, id){
 }
 
 function blogClicked(id){
-    window.location.href = "blog.html?&id=" + id
+    window.location.href = "blog.html?id=" + encodeURIComponent(id)
 }
