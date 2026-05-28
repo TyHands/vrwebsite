@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
   navbar.innerHTML = 
 '<div class="row valign-wrapper white lato-nav no-margin nav-shadow nav-sizing">' +
   '<div class="custom-nav col s1 nav-wrapper">' +
-    '<a href="index.html"><img src="res/VRLOGO.png" class="left logo_img" alt="Vintage Revelations"></a>' +
+    '<a href="index.html"><img src="res/VRLOGO.webp" class="left logo_img" alt="Vintage Revelations"></a>' +
   '</div>' +
   '<div class="custom-nav col s6 nav-wrapper">' +
     '<a href="#" data-target="dropdown" class="sidenav-trigger black-text right menu-bar"><i class="small material-icons">menu</i></a>' +
